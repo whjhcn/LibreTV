@@ -135,8 +135,8 @@ window.extendAPISites = extendAPISites;
 // 添加聚合搜索的配置选项
 const AGGREGATED_SEARCH_CONFIG = {
     enabled: true,             // 是否启用聚合搜索
-    timeout: 8000,            // 单个源超时时间（毫秒）
-    maxResults: 10000,          // 最大结果数量
+    timeout: 5000,            // 单个源超时时间（毫秒）
+    maxResults: 5000,          // 最大结果数量
     parallelRequests: true,   // 是否并行请求所有源
     showSourceBadges: true    // 是否显示来源徽章
 };
@@ -202,7 +202,7 @@ const SECURITY_CONFIG = {
 // 添加多个自定义API源的配置
 const CUSTOM_API_CONFIG = {
     separator: ',',           // 分隔符
-    maxSources: 5,            // 最大允许的自定义源数量
+    maxSources: 50,            // 最大允许的自定义源数量
     testTimeout: 5000,        // 测试超时时间(毫秒)
     namePrefix: 'Custom-',    // 自定义源名称前缀
     validateUrl: true,        // 验证URL格式
